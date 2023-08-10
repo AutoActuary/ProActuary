@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proactuary"
+description = "ProActuary: Package to read and operate on actuarial file formats"
+long-description = "README.md"
+long-description-content-type = "text/markdown"
+dynamic = ["version"]
+dependencies = [
+    "pandas>=1.0.0",
+]
+authors = [
+    {name = "Auto Actuary"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.6"
+
+[project.urls]
+repository = "https://github.com/autoactuary/proactuary"
+
+[tool.setuptools]
+include-package-data = false
+packages = ["proactuary"]
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.setuptools_scm]
+write_to = "proactuary/version.py"
