@@ -1,15 +1,16 @@
 # ProActuary – <span style="font-size:0.75em">Package to read and operate on actuarial file formats</span>
 
-This Python package provides utilities tailored for the specialized text formats frequently encountered in actuarial work.
+This Python package provides utilities tailored for specialized text formats frequently encountered in actuarial work.
 
 ## Background
 
-Within the actuarial domain, there's a specific file format that, at a glance, appears similar to a CSV. However, it incorporates some unique characteristics:
+Within the actuarial domain, there's specific file formats that, at a glance, appears similar to a CSV. However, it incorporates some unique characteristics:
 
 * Allows for preamble content before the header.
-* Supports data appended after the main content.
-* Starting data lines with an asterisk.
-* Enforces a strict format where headers must not be surrounded by quotes, but all other strings should be.
+* Allows for type annotations.
+* Supports metadata appended after the main content.
+* Starting any data line with an asterisk.
+* Enforces headers not to be surrounded by quotes, while all other data strings should be.
 
 Given the intricate nature of this format and the emphasis on data integrity in actuarial work, there's a demand for a toolset that can seamlessly handle such files. Enter ProActuary.
 
