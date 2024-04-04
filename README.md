@@ -12,7 +12,7 @@ Within the actuarial domain, there's specific file formats that, at a glance, ap
 * Starting any data line with an asterisk.
 * Enforces headers not to be surrounded by quotes, while all other data strings should be.
 
-Given the intricate nature of this format and the emphasis on data integrity in actuarial work, there's a demand for a toolset that can seamlessly handle such files. Enter ProActuary.
+Given the intricate nature of this format and the emphasis on data integrity in actuarial work, there's a demand for a toolset that can seamlessly handle such files.
 
 ## Features
 
